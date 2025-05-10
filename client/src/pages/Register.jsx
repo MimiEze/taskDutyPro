@@ -37,7 +37,7 @@ export default function Register() {
           <label htmlFor="username" className="floating-label">
             <span>Username</span>
             <input
-              className="input input-lg w-full -z-10"
+              className="input input-lg w-full z-10"
               type="text"
               placeholder="Username"
               {...register("username", { required: true })}
@@ -51,7 +51,7 @@ export default function Register() {
           <label htmlFor="email" className="floating-label">
             <span>Email</span>
             <input
-              className="input input-lg w-full -z-10"
+              className="input input-lg w-full z-10"
               type="email"
               placeholder="Email"
               {...register("email", { required: true })}
@@ -65,7 +65,7 @@ export default function Register() {
           <label htmlFor="password" className="floating-label">
             <span>Password</span>
             <input
-              className="input input-lg w-full -z-10"
+              className="input input-lg w-full z-10"
               type="password"
               placeholder="Password"
               {...register("password", { required: true })}
