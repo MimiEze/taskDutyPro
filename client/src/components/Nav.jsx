@@ -1,7 +1,8 @@
 import { Link } from "react-router";
 import logo from "../assets/logo.png";
 import avatar from "../assets/avatar.png";
-import { useAuth } from "../store"
+import { useAuth } from "../store";
+import Sidebar from "./Sidebar";
 
 export default function Nav() {
 const { user, handleLogout } = useAuth(); 
@@ -11,6 +12,7 @@ const { user, handleLogout } = useAuth();
         <Link to="/" >
           <img src={logo} alt="logo" />
         </Link>
+        <Sidebar />
         <div className="hidden md:block">
           {user ? <div className="flex gap-4 items-center">
             <Link to="/new-task" className="hover:font-semibold">New Task</Link>
